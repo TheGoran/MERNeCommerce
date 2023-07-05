@@ -1,15 +1,19 @@
-import {Nav, Navbar, Container, NavbarBrand} from 'react-bootstrap';
+import {Nav, Navbar, Container, } from 'react-bootstrap';
 import {FaShoppingCart, FaUser} from 'react-icons/fa';
-//here we import the bootstrap and the faicons and create the header appearance.
+import logo from '../assets/logo.png';
+//here we import the bootstrap and the f-icons and create the header appearance.
 //we will be importing this into the App.js
 
 
 const Header = () => {
   return (
     <header>
-        <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
+        <Navbar bg="dark" variant="black" expand="lg" collapseOnSelect>
            <Container>
-              <Navbar.Brand href="/"> GoShop</Navbar.Brand>
+              <Navbar.Brand href="/">
+               <img src={logo} alt="logo" width="60px" height="60px" />
+                oShop
+                </Navbar.Brand>
               <Navbar.Toggle aria-controls='basic-navbar-nav' />
               <Navbar.Collapse id="basic-navbar-nav">
                  <Nav className="ms-auto">
