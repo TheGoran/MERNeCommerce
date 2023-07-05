@@ -2,3 +2,4 @@
 to create the front end folder
 
 2.  import react bootstrap:
+npm install react-bootstrap react-icons
